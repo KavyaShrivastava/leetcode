@@ -1,0 +1,13 @@
+#Slicing
+You can slice a string, a list, a numpy array,
+For instance the expression s[::-1] where s is a string would mean:
+
+1. s is your string or sequence.
+2. The square brackets [] indicate slicing.
+3. Inside the brackets, the :: specifies the start and end of the slice, and what comes after it is the step.
+4. The first empty space before the first colon : means "start at the beginning of the string".
+5. The second empty space after the first colon and before the second colon : means "all the way to the end of the string".
+6. The -1 after the second colon specifies the step. In this case, 
+
+#String Methods
+#The .isalnum() method is a string method in Python
