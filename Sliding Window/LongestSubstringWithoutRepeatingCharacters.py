@@ -27,7 +27,8 @@ class LongestSubstringWithoutRepeatingCharacters:
         for right in range(len(s)):
             if s[right] in charIndexMap:
             # If the character is in the dictionary, move the left pointer
-            # max is used here to avoid moving left pointer backward
+            # max is used here to avoid moving left pointer backward i.e there could be a value that you'll see later which technically appeared before the current window
+            #so you could move left backward and make the window bigger than it should with repeated values 
                 left = max[left, charIndexMap[right]+1]
                 # Update the last index of the character i.e. the value of the key
                 charIndexMap[s[right]] = right
