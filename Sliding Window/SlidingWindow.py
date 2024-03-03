@@ -30,7 +30,7 @@ class SlidingWindow:
         
         window_sum = sum(array[:k]) #calculate the first window's sum
         maxSum = window_sum # calculate the maxSum at this point
-        for i in range(n-k): #the loop only goes through until n-k-1 because it'll reach i = n-k-1+k = n-1 which means the last inde when it calculates window
+        for i in range(n-k): #the loop only goes through until n-k-1 because it'll reach i = n-k-1+k = n-1 which means the last index when it calculates window
             window_sum = window_sum - array[i] + array[i+k] #calculate the value of window_sum by adding the value of the next index outside the window where the window starts at i
             maxSum = max(window_sum, maxSum)
         
